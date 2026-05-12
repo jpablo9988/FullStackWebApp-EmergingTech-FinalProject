@@ -28,12 +28,11 @@ function LoginUser() {
         {/* Logo & App Name */}
         <div className="flex flex-col items-center justify-center mb-8 space-y-2">
           <img src="/healthlogo.png" alt="Your Health Logo" className="w-24 h-24" />
-          <h1 className="text-3xl font-bold text-blue-600 tracking-wide">YOUR HEALTH</h1>
         </div>
 
         {/* Login Heading */}
         <h2 className="text-xl font-semibold text-center text-gray-700 mb-6">
-          Login to Your Health
+          Log-in
         </h2>
 
         {/* Error Message */}
@@ -48,15 +47,16 @@ function LoginUser() {
           {/* Email */}
           <div className="w-full">
             <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
-              Email
+              <b>Email:</b>
             </label>
+            <br />
             <input
               id="email"
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               className="w-full border border-gray-300 rounded-md px-3 py-2 shadow-sm focus:ring-blue-500 focus:border-blue-500"
-              placeholder="you@example.com"
+              placeholder="Your mail..."
               required
             />
           </div>
@@ -64,15 +64,16 @@ function LoginUser() {
           {/* Password */}
           <div className="w-full">
             <label htmlFor="password" className="block text-sm font-medium text-gray-700 mb-1">
-              Password
+              <b>Password: </b>
             </label>
+            <br />
             <input
               id="password"
               type="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               className="w-full border border-gray-300 rounded-md px-3 py-2 shadow-sm focus:ring-blue-500 focus:border-blue-500"
-              placeholder="••••••••"
+              placeholder="*****"
               required
             />
           </div>

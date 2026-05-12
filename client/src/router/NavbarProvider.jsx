@@ -9,10 +9,10 @@ import React from 'react';
 const NavbarProvider = () => {
     const { isLoggedIn, logout, isNurse } = React.useContext(AuthContext);
     return (
-        <Navbar bg="primary" variant="dark" expand="lg">
+        <Navbar bg="secondary" variant="dark" expand="xl">
             <Container>
                 <Navbar.Brand as={Link} to="/home">
-                    Final Project - Emergent Tech.
+                    <b>YOUR HEALTH</b>
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
